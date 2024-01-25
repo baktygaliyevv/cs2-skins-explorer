@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 function App() {
   return (
     <div>
