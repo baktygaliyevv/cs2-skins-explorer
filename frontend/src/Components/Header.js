@@ -5,6 +5,16 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+
+import Agent from '../pages/Agents';
+import Container from '../pages/Container';
+import Gloves from '../pages/Gloves';
+import Heavy from '../pages/Heavy';
+import Knives from '../pages/Knives';
+import Pistols from '../pages/Pistols';
+import Rifles from '../pages/Rifles';
+import Smg from '../pages/Smg';
+
 function OffcanvasExample() {
   return (
     <>
@@ -57,7 +67,6 @@ function OffcanvasExample() {
 
       <Router>
         <Routes>
-          <Route exact path="/" element={Home}/>
           <Route exact path="/knives" element={<Knives/>}/>
           <Route exact path="/gloves" element={<Gloves/>}/>
           <Route exact path="/rifles" element={<Rifles/>}/>
