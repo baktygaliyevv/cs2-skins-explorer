@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import lupa from './lupa.png';
 
 import Agent from '../pages/Agents';
 import Container from '../pages/Container';
@@ -15,10 +16,10 @@ import Pistols from '../pages/Pistols';
 import Rifles from '../pages/Rifles';
 import Smg from '../pages/Smg';
 
-function OffcanvasExample() {
+function Header() {
   return (
     <>
-      <Navbar fixed="top" bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary mb-3">
+      <Navbar sticky="top" bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary mb-3">
         <Navbar.Brand className="mx-4" href="/">CS2 SKINS</Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
@@ -56,10 +57,10 @@ function OffcanvasExample() {
               <Form.Control
                 type="search"
                 placeholder="Search"
-                className="me-2"
+                className="me-1"
                 aria-label="Search"
               />
-              <Button className="mx-1" variant="outline-light">Search</Button>
+              <Button className="mx-2" variant="outline-light"><img src={lupa} alt="Search" width={20} height={25} style={{cursor: 'pointer'}} /*onClick={функция поиска}*/ /></Button>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
@@ -81,4 +82,4 @@ function OffcanvasExample() {
   );
 }
 
-export default OffcanvasExample;
+export default Header;

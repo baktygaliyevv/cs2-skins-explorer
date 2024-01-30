@@ -37,6 +37,6 @@
   }
 }
 
-body {
-  height: 2000px;
+.card-component {
+  margin-bottom: 1rem;
 }
