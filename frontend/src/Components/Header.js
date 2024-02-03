@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import lupa from './lupa.png';
+import search from './search.svg';
 
 import Agent from '../pages/Agents';
 import Container from '../pages/Container';
@@ -60,7 +60,7 @@ function Header() {
                 className="me-1"
                 aria-label="Search"
               />
-              <Button className="mx-2" variant="outline-light"><img src={lupa} alt="Search" width={20} height={25} style={{cursor: 'pointer'}} /*onClick={функция поиска}*/ /></Button>
+              <Button className="mx-2" variant="light"><img src={search} alt="Search" width={20} height={25} style={{cursor: 'pointer'}} /*onClick={функция поиска}*/ /></Button>
             </Form>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
