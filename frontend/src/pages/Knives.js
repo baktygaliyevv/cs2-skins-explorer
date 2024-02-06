@@ -18,8 +18,8 @@ const Knives = ({ category }) => {
       })
       .then(data => setKnives(data))
       .catch(error => console.error('There has been a problem with your fetch operation:', error));
-  }, [category]); // Dependency array now includes category
-
+  }, [category]);
+  
   return (
     <Container>
       <Row>

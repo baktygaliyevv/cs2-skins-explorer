@@ -34,25 +34,25 @@ function Header() {
             <Nav className="justify-content-center flex-grow-1">
               <NavDropdown title="Knives" id="offcanvasNavbarDropdown">
                 <NavDropdown.Item href="/allknives">All Knives</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Bayonet</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Bowie</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Butterfly</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Classic</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Falchion</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Flip</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Gut</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Huntsman</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Karambit</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">M9 Bayonet</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Navaja</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Nomad</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Paracord</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Shadow Daggers</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Skeleton</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Stiletto</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Survival</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Talon</NavDropdown.Item>
-                <NavDropdown.Item href="/allknives">Ursus</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/bayonet">Bayonet</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/bowie">Bowie</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/butterfly">Butterfly</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/classic">Classic</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/falchion">Falchion</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/flip">Flip</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/gut">Gut</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/huntsman">Huntsman</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/karambit">Karambit</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/m9bayonet">M9 Bayonet</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/navaja">Navaja</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/nomad">Nomad</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/paracord">Paracord</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/shadowdaggers">Shadow Daggers</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/skeleton">Skeleton</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/stiletto">Stiletto</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/survival">Survival</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/talon">Talon</NavDropdown.Item>
+                <NavDropdown.Item href="/knives/ursus">Ursus</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Gloves" id="offcanvasNavbarDropdown">
                 <NavDropdown.Item href="/allgloves">All Gloves</NavDropdown.Item>
