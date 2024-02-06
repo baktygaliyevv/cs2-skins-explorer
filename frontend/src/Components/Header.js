@@ -88,6 +88,26 @@ function Header() {
       <Router>
         <Routes>
           <Route exact path="/allknives" element={<Knives/>}/>
+          <Route path="/knives/bayonet" element={<Knives category="Bayonet"/>} />
+          <Route path="/knives/bowie" element={<Knives category="Bowie"/>} />
+          <Route path="/knives/butterfly" element={<Knives category="Butterfly"/>} />
+          <Route path="/knives/classic" element={<Knives category="Classic"/>} />
+          <Route path="/knives/falchion" element={<Knives category="Falchion"/>} />
+          <Route path="/knives/flip" element={<Knives category="Flip"/>} />
+          <Route path="/knives/gut" element={<Knives category="Gut"/>} />
+          <Route path="/knives/huntsman" element={<Knives category="Huntsman"/>} />
+          <Route path="/knives/karambit" element={<Knives category="Karambit"/>} />
+          <Route path="/knives/m9bayonet" element={<Knives category="M9 Bayonet"/>} />
+          <Route path="/knives/navaja" element={<Knives category="Navaja"/>} />
+          <Route path="/knives/nomad" element={<Knives category="Nomad"/>} />
+          <Route path="/knives/paracord" element={<Knives category="Paracord"/>} />
+          <Route path="/knives/shadowdaggers" element={<Knives category="Shadow Daggers"/>} />
+          <Route path="/knives/skeleton" element={<Knives category="Skeleton"/>} />
+          <Route path="/knives/stiletto" element={<Knives category="Stiletto"/>} />
+          <Route path="/knives/survival" element={<Knives category="Survival"/>} />
+          <Route path="/knives/talon" element={<Knives category="Talon"/>} />
+          <Route path="/knives/ursus" element={<Knives category="Ursus"/>} />
+
           <Route exact path="/allgloves" element={<Gloves/>}/>
           <Route exact path="/allrifles" element={<Rifles/>}/>
           <Route exact path="/allpistols" element={<Pistols/>}/>

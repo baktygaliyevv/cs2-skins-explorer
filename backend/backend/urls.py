@@ -19,5 +19,5 @@ from django.urls import path
 from .views import get_skins
 
 urlpatterns = [
-    path('skins/<str:category>', get_skins, name='get_skins'),
+    path('skins/<str:category>/', get_skins, name='get_skins'),
 ]
