@@ -4,3 +4,4 @@
 4. сделать прайсы правильные
 5. Inspect in-game steam prices buttons
 6. Filters*
+7. Перейти на линк <NavDropdown.Item as={Link} to="/knives/bayonet">Bayonet</NavDropdown.Item>
