@@ -1,7 +1,5 @@
-1. Поработать над дизайном
-2. Рабочий поиск
-3. Добить контентом полностью
-4. сделать прайсы правильные
+1. Design
+2. Search
+3. Agents and Containers
 5. Inspect in-game steam prices buttons
 6. Filters*
-7. Перейти на линк <NavDropdown.Item as={Link} to="/knives/bayonet">Bayonet</NavDropdown.Item>

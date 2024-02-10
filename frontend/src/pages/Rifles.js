@@ -4,11 +4,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CardComponent from '../Components/Card';
 
-const Rifles = () => {
+const Rifles = ({ category }) => {
   const [rifles, setRifles] = useState([]);
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/skins/Rifles')
+    const endpoint = category ? `http://127.0.0.1:8000/skins/rifles/${category}` : 'http://127.0.0.1:8000/skins/rifles';
+    fetch(endpoint)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -17,8 +18,8 @@ const Rifles = () => {
       })
       .then(data => setRifles(data))
       .catch(error => console.error('There has been a problem with your fetch operation:', error));
-  }, []);
-
+  }, [category]);
+  
   return (
     <Container>
       <Row>
