@@ -16,10 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import get_skins
+from .views.skins import get_skins
+from .views.agents import get_agents
+from .views.containers import get_containers
 
 urlpatterns = [
     path('skins/<category>/', get_skins, name='get_skins_by_category'),
     path('skins/<category>/<skin_type>/', get_skins, name='get_specific_skins'),
+    path('agents/', get_agents, name='get_agents'),
+    path('containers/', get_containers, name='get_containers')
 ]
 
