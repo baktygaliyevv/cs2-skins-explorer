@@ -8,7 +8,8 @@ const Heavy = ({ category }) => {
   const [heavy, setHeavy] = useState([]);
 
   useEffect(() => {
-    const endpoint = category ? `http://127.0.0.1:8000/skins/heavy/${category}` : 'http://127.0.0.1:8000/skins/heavy';
+    const endpoint = category ? 'http://127.0.0.1:8000/skins/heavy/${category}' : 
+                                'http://127.0.0.1:8000/skins/heavy';
     fetch(endpoint)
       .then(response => {
         if (!response.ok) {

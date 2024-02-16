@@ -8,7 +8,8 @@ const Rifles = ({ category }) => {
   const [rifles, setRifles] = useState([]);
 
   useEffect(() => {
-    const endpoint = category ? `http://127.0.0.1:8000/skins/rifles/${category}` : 'http://127.0.0.1:8000/skins/rifles';
+    const endpoint = category ? 'http://127.0.0.1:8000/skins/rifles/${category}' : 
+                                'http://127.0.0.1:8000/skins/rifles';
     fetch(endpoint)
       .then(response => {
         if (!response.ok) {

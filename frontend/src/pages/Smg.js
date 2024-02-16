@@ -8,7 +8,8 @@ const SMG = ({ category }) => {
   const [smgs, setSMGs] = useState([]);
 
   useEffect(() => {
-    const endpoint = category ? `http://127.0.0.1:8000/skins/smgs/${category}` : 'http://127.0.0.1:8000/skins/smgs';
+    const endpoint = category ? 'http://127.0.0.1:8000/skins/smgs/${category}' : 
+                                'http://127.0.0.1:8000/skins/smgs';
     fetch(endpoint)
       .then(response => {
         if (!response.ok) {

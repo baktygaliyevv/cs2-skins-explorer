@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
 function CardComponent(props) {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem', height: '28rem' }}>
       <Card.Img variant="top" src={props.img_src} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>

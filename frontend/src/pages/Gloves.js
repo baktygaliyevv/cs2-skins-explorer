@@ -8,7 +8,8 @@ const Gloves = ({ category }) => {
   const [gloves, setGloves] = useState([]);
 
   useEffect(() => {
-    const endpoint = category ? `http://127.0.0.1:8000/skins/gloves/${category}` : 'http://127.0.0.1:8000/skins/gloves';
+    const endpoint = category ? 'http://127.0.0.1:8000/skins/gloves/${category}' : 
+                                'http://127.0.0.1:8000/skins/gloves';
     fetch(endpoint)
       .then(response => {
         if (!response.ok) {
