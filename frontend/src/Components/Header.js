@@ -100,6 +100,7 @@ function Header() {
               </NavDropdown>
               <NavDropdown title="SMG" id="offcanvasNavbarDropdown">
                 <NavDropdown.Item href="/allsmg">All SMG</NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="/smgs/mac10">MAC-10</NavDropdown.Item>
                 <NavDropdown.Item href="/smgs/mp5sd">MP5-SD</NavDropdown.Item>
                 <NavDropdown.Item href="/smgs/mp7">MP7</NavDropdown.Item>
@@ -110,6 +111,7 @@ function Header() {
               </NavDropdown>
               <NavDropdown title="Heavy" id="offcanvasNavbarDropdown">
                 <NavDropdown.Item href="/allheavy">All Heavy</NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="/heavy/mag7">MAG-7</NavDropdown.Item>
                 <NavDropdown.Item href="/heavy/nova">Nova</NavDropdown.Item>
                 <NavDropdown.Item href="/heavy/sawedoff">Sawed-Off</NavDropdown.Item>

@@ -12,7 +12,7 @@ const Knives = ({ category }) => {
   const [isAllKnives, setIsAllKnives] = useState(!category); 
 
   useEffect(() => {
-    const endpoint = category ? 'http://127.0.0.1:8000/skins/knives/${category}' : 
+    const endpoint = category ? `http://127.0.0.1:8000/skins/knives/${category}` : 
                                 'http://127.0.0.1:8000/skins/knives';
     fetch(endpoint)
       .then(response => {
@@ -48,6 +48,7 @@ const Knives = ({ category }) => {
           </Col>
         ))}
       </Row>
+      {isAllKnives && <PaginationComponent itemsPerPage={knivesPerPage} totalItems={knives.length} paginate={paginate} />}
     </Container>
   );
 };
