@@ -33,7 +33,7 @@ async def get_specific_skin(category: str, skin_type: str):
         filtered_items = []
 
         for item in all_items:
-            if item.get("category") and item["category"].get("name") and item.get("name"):
+            if item.get("category") and item["category"].get("name"):
                 item_category_name = item["category"]["name"].lower()
                 item_name = item["name"].lower()
                 if category.lower() in item_category_name and skin_type.lower() in item_name:
@@ -43,6 +43,16 @@ async def get_specific_skin(category: str, skin_type: str):
                         "image": item["image"]
                     })
 
+            elif item.get("category") and not item["category"].get("name"):
+                item_weapon_name = item["weapon"]["name"].lower()
+                item_name = item["name"].lower()
+                if category.lower() == "pistols" and skin_type.lower() in item_weapon_name:
+                    filtered_items.append({
+                        "name": item["name"],
+                        "rarity": item["rarity"]["name"],
+                        "image": item["image"]
+                    })
         return filtered_items
     else:
         raise HTTPException(status_code=response.status_code, detail="Failed to retrieve items")
+

@@ -182,7 +182,7 @@ function Header() {
           <Route exact path="/rifles/ssg08" element={<Rifles category="SSG 08"/>} />
 
           <Route exact path="/allpistols" element={<Pistols/>}/>
-          <Route path="/pistols/zeus" element={<Pistols category="Zeus"/>} />
+          <Route path="/pistols/zeus" element={<Pistols category="Zeus x27"/>} />
           <Route path="/pistols/cz75auto" element={<Pistols category="CZ75-Auto"/>} />
           <Route path="/pistols/deserteagle" element={<Pistols category="Desert Eagle"/>} />
           <Route path="/pistols/dualberettas" element={<Pistols category="Dual Berettas"/>} />
